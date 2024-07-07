@@ -2,76 +2,60 @@
 title: Goldydocs
 ---
 
-{{< blocks/cover title="Welcome to Goldydocs: A Docsy Example Project!" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Welcome to KRS - Kubernetes Recommender System." image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/kubetoolsca/krs">
+  Github <i class="fab fa-github ms-2 "></i>
 </a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
+<p class="lead mt-5">Empower your Kubernetes cluster management with the help of <strong>AI</strong></p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+Krs is here to change the game! This project utilizes GenAI technology to recommend the perfect Kubernetes tools for your unique environment. 
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+Say goodbye to endless searches and hello to a streamlined, efficient workflow.
+
+
 {{% /blocks/lead %}}
 
 
+
 {{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-magnifying-glass" title="Scanning the Kubernetes cluster" %}}
+The tool scans the cluster to identify the deployed pods, services, and deployments. It retrieves information about the tools used in the cluster and their rankings.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fa-screwdriver-wrench" title="Detecting tools from the repository"  %}}
+The tool detects the tools used in the cluster by analyzing the names of the pods and deployments.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
-
-
-{{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fa-arrow-up-9-1" title="Extracting rankings"  %}}
+The tool extracts the rankings of the detected tools based on predefined criteria. It categorizes the tools into different categories and provides the rankings for each category.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
 
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
+{{% blocks/section color="light" type="row" %}}
+{{% blocks/feature icon="fa-list" title="Generating recommendations" %}}
+The tool generates recommendations for Kubernetes tools based on the detected tools and their rankings. It suggests the best tools for each category and compares them with the tools already used in the cluster.
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="fa-notes-medical" title="Health check"  %}}
+The tool provides a health check for a selected pod in the cluster. It extracts logs and events from the pod and analyzes them using a language model (LLM) to identify potential issues and provide recommendations for resolving them.
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="fa-info" title="Exporting pod information"  %}}
+The tool exports the information about the pods, services, and deployments in the cluster to a JSON file.
+{{% /blocks/feature %}}
+
 {{% /blocks/section %}}
+
